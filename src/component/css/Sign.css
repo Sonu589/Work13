@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #1d2951;
+  overflow: hidden;
+}
+
+.horse {
+  background-color: #1d2951;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formss {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  background-color: #1d2951;
+  margin: 0 auto;
+}
+
+.sign-text {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 10px 0;
+  border: 1px solid #1d2951;
+  outline: none;
+  color: #fff;
+  caret-color: #007bff;
+
+  ::placeholder {
+    color: #007bff;
+  }
+}
+
+.names {
+  background-color: #1d2951;
+}
+
+.remember-me-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+  padding-right: 15px;
+}
+
+.check a {
+  color: #eaf0f7;
+  margin-top: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  width: 30px;
+  height: 20px;
+}
+
+label,
+legend {
+  color: #fff;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.buut {
+  margin-top: 40px;
+  background-color: #eaf0f7;
+  color: #1d2951;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.buut:hover {
+  background-color: #0056b3;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.button-inside-text {
+  display: inline-block;
+  background-color: #eaf0f7;
+  color: #1d2951;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.button-inside-text:hover {
+  background-color: #0056b3;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+input:-webkit-autofill {
+  /* Add your desired styles here */
+  background-color: #1d2951 !important;
+  /* Additional styles as needed */
+}
+
+/* Responsive CSS for smaller screens */
+@media (max-width: 768px) {
+  .formss {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .sign-text {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  .names input[type="text"],
+  .names input[type="email"],
+  .names input[type="password"] {
+    font-size: 16px;
+  }
+
+  .remember-me-label {
+    padding-right: 10px;
+  }
+
+  .check {
+    margin-top: 20px;
+  }
+
+  .buut {
+    width: 30%;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  /* Responsive button text size for smaller screens */
+  @media (max-width: 480px) {
+    .buut {
+      font-size: 16px;
+    }
+  }
+
+  /* Responsive button text size for even smaller screens */
+  @media (max-width: 360px) {
+    .buut {
+      font-size: 14px;
+    }
+  }
+}

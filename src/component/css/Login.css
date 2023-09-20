@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #1d2951;
+  overflow: hidden;
+}
+
+.h {
+  background-color: #1d2951;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  background-color: #1d2951;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 10px 0;
+  background-color: #1d2951;
+  border: 1px solid #1d2951;
+  outline: none;
+  color: #fff;
+  caret-color: #007bff;
+
+  ::placeholder {
+    color: #007bff;
+  }
+}
+
+.remember-me-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+  padding-right: 15px;
+}
+
+.check a {
+  color: #eaf0f7;
+  margin-top: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  width: 30px;
+  height: 20px;
+}
+
+label,
+legend {
+  color: #fff;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.buttonsa {
+  margin-top: 40px;
+  background-color: #eaf0f7;
+  color: #1d2951;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  height:40px;
+  width:150px;
+  font-weight: bold;
+}
+
+.buttonsa:hover {
+  background-color: #0056b3;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.button-inside-text {
+  display: inline-block;
+  background-color: #eaf0f7;
+  color: #1d2951;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.button-inside-text:hover {
+  background-color: #0056b3;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 16px;
+  }
+
+  .remember-me-label {
+    padding-right: 10px;
+  }
+
+  .buttonsa,
+  .button-inside-text {
+    width: 100%;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .check {
+    margin-top: 20px;
+  }
+}
